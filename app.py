@@ -23,7 +23,7 @@ def nhap_du_lieu():
     st.header("📝 Vui lòng trả lời các câu hỏi sau:")
 
     # 10 câu hỏi A1 đến A10
-    a1 = st.selectbox("1. Có khi nào người được đánh giá tránh giao tiếp bằng mắt?", ["Không", "Có"])
+    a1 = st.selectbox("1. Có khi nào người đó giá tránh giao tiếp bằng mắt?", ["Không", "Có"])
     a2 = st.selectbox("2. Người đó có thích chơi một mình?", ["Không", "Có"])
     a3 = st.selectbox("3. Người đó có hay lặp lại từ/ngôn ngữ không?", ["Không", "Có"])
     a4 = st.selectbox("4. Người đó có khó khăn khi hiểu cảm xúc người khác?", ["Không", "Có"])
@@ -68,7 +68,8 @@ if st.button("📊 Dự đoán khả năng tự kỷ"):
     st.markdown("### 🧭 Gợi ý hành động tiếp theo:")
     if pred == 1:
         st.info("""
-        🔹 Hãy liên hệ chuyên gia tâm lý hoặc cơ sở y tế để được tư vấn kỹ lưỡng hơn.
+        🔹 Người này có khả năng cao mắc chứng rối loạn phổ tự kỷ.
+        Hãy liên hệ chuyên gia tâm lý hoặc cơ sở y tế để được tư vấn kỹ lưỡng hơn.
         🔹 Ghi chép lại các biểu hiện thường gặp trong cuộc sống hàng ngày.
         🔹 Có thể tham khảo các tài liệu về ASD từ WHO, CDC hoặc các trung tâm hỗ trợ trong nước.
         """)
